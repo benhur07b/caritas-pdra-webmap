@@ -1,0 +1,43 @@
+#map {
+    height:@SIDEBAR_MIN_HT;
+}
+
+// CUSTOM POPUPs
+.mapboxgl-popup.custom-popup {
+/*any styles u wish*/
+}
+
+.mapboxgl-popup-content {
+    max-height: 300px;
+    overflow-y: scroll;
+}
+
+.custom-popup .mapboxgl-popup-content {
+    // background: rgba(74, 183, 190, 0.7);
+    background: rgba(65, 117, 180, 0.7);
+    color:#fff;
+    font-size:13px;
+    line-height:18px;
+    border-radius: 2px;
+    min-width: 120px;
+    max-height: 300px;
+    overflow-y: scroll;
+    // opacity: 0.5;
+    // box-shadow: 1px 1px 4px 1px #eeeeee,
+    //             -1px -1px 4px 1px #eeeeee;
+}
+
+.custom-popup .mapboxgl-popup-content a {
+    color:rgba(255,255,255,0.1);
+}
+
+.custom-popup .mapboxgl-popup-tip-container {
+    width:30px;
+    height:15px;
+}
+
+.custom-popup .mapboxgl-popup-tip {
+    background: transparent;
+    border: none;
+    box-shadow: none;
+}

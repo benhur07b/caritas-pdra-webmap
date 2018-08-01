@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>#DigitalPH PDRA Map - Catmon</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/less" href="static/css/main.less" />
+
+    <!-- Less -->
+    <script src="//cdnjs.cloudflare.com/ajax/libs/less.js/3.0.0/less.min.js" ></script>
+
+    <!-- MAPBOX -->
+    <script src='https://api.mapbox.com/mapbox-gl-js/v0.44.2/mapbox-gl.js'></script>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v0.44.2/mapbox-gl.css' rel='stylesheet' />
+    <link href='https://www.mapbox.com/base/latest/base.css' rel='stylesheet' />
+
+    <!-- CHART JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+</head>
+
+<body>
+    <div class='col12 contain fill-navy dark clip'>
+        <div class='col12 quiet' id="map"></div>
+        <div class='pin-left'>
+            <a href="#info" class='icon info big'></a>
+        </div>
+        <!-- <div class='pin-right pad1x pad1y clearfix fill-darken2 col4' id='layers'>
+
+        </div> -->
+
+
+        <div id='info' class='col4 pad1 fill-darken2 pin-left offcanvas-left animate'>
+            <a href='#' class='fill-darken2 icon close'></a>
+                <!-- Click the buttons below to know the Level of Hazard, Vulnerability, Capacity, and Risk for the Households.
+                Click on the Households on the map to see the PDRA indicators. -->
+                <div>
+                    <h2>NASSA-Caritas</h2>
+                    <h3>Participatory Disaster Risk Assessment</h3>
+                    <table>
+                    <thead></thead>
+                    <tbody>
+                        <tr>
+                            <td>Barangay</td>
+                            <td> <strong><span id="info-brgy"></span></strong</td>
+                        </tr>
+                        <tr>
+                            <td>City/Municipality</td>
+                            <td><strong><span id="info-muni"></span></strong></td>
+                        </tr>
+                        <tr>
+                            <td>Province</td>
+                            <td><strong><span id="info-prov"></span></strong></td>
+                        </tr>
+                        <tr>
+                            <td>Diocese</td>
+                            <td><strong><span id="info-dioc"></span></strong></td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class='pad1y'>
+                    <div class='pill pad1y'>
+                        <a class='col12 button style-btn' id='showHaz'>Hazard</a>
+                        <!-- <a class='col12 button style-btn' id='hazAll'>All</a> -->
+                        <a class='col12 button style-btn' id='hazLow'>Low</a>
+                        <a class='col12 button style-btn' id='hazMed'>Medium</a>
+                        <a class='col12 button style-btn' id='hazHigh'>High</a>
+                    </div>
+                    <div class='pill pad1y'>
+                        <a class='col12 button style-btn' id='showVul'>Vulnerability</a>
+                        <!-- <a class='col12 button style-btn' id='vulAll'>All</a> -->
+                        <a class='col12 button style-btn' id='vulLow'>Low</a>
+                        <a class='col12 button style-btn' id='vulMed'>Medium</a>
+                        <a class='col12 button style-btn' id='vulHigh'>High</a>
+                    </div>
+                    <div class='pill pad1y'>
+                        <a class='col12 button style-btn' id='showCap'>Capacity</a>
+                        <a class='col12 button style-btn' id='capLow'>Low</a>
+                        <a class='col12 button style-btn' id='capMed'>Medium</a>
+                        <a class='col12 button style-btn' id='capHigh'>High</a>
+                    </div>
+                    <div class='pill pad1y'>
+                        <a class='col12 button style-btn' id='showRisk'>Risk</a>
+                        <a class='col12 button style-btn' id='riskLow'>Low</a>
+                        <a class='col12 button style-btn' id='riskMed'>Medium</a>
+                        <a class='col12 button style-btn' id='riskHigh'>High</a>
+                    </div>
+
+                    <!-- <p>Barangay: <strong><span id="info-brgy"></span></strong></p>
+                    <p>Municipality/City: <strong><span id="info-muni"></span></strong></p>
+                    <p>Province: <strong><span id="info-prov"></span></strong></p>
+                    <p>Diocese: <strong><span id="info-dioc"></span></strong></p> -->
+                    <div class="col12 pad1y">
+                        <canvas id="info-chart"></canvas>
+                    </div>
+                    <small>Click on the <strong><em>Households on the map</em></strong> to see the PDRA indicators.</small>
+                    <small>Click the <strong><em>buttons above</em></strong> to know the Level of Hazard, Vulnerability, Capacity, and Risk for the Households.</small>
+                </div>
+        </div>
+    </div>
+    <script src="static/js/main.js"></script>
+</body>
+</html>

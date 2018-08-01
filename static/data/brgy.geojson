@@ -1,0 +1,8 @@
+{
+"type": "FeatureCollection",
+"name": "brgy",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"features": [
+{ "type": "Feature", "properties": { "Country": "Philippines", "Region": "Region VIII", "Region Name": "Eastern Visayas", "Province": "Leyte", "MuniCity": "Tanauan", "Barangay": "Catmon", "Diocese": "Archdiocese of Palo", "Number_of_Households": 102, "Hazard_LOW": 80, "Hazard_MEDIUM": 22, "Hazard_HIGH": null, "Vulnerability_LOW": 99, "Vulnerability_MEDIUM": 3, "Vulnerability_HIGH": null, "Capacity_LOW": 68, "Capacity_MEDIUM": 29, "Capacity_HIGH": 5, "Risk_LOW": 74, "Risk_MEDIUM": 25, "Risk_HIGH": 3 }, "geometry": { "type": "MultiPolygon", "coordinates": [ [ [ [ 125.0121002197, 11.0559301376 ], [ 125.0112075806, 11.0537595749 ], [ 125.009727478, 11.0489397049 ], [ 125.0089187622, 11.0472002029 ], [ 125.0051422119, 11.0444698334 ], [ 125.0023880005, 11.0447902679 ], [ 125.0005874634, 11.0436296463 ], [ 124.9987564087, 11.0425300598 ], [ 125.0012435913, 11.0590400696 ], [ 125.0016174316, 11.0637903214 ], [ 125.0022735596, 11.0666503906 ], [ 125.0126037598, 11.057849884 ], [ 125.0121002197, 11.0559301376 ] ] ] ] } }
+]
+}
