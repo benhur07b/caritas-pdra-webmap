@@ -433,5 +433,6 @@ $(document).ready(function(){
         });
     }
 
+    map.resize();
 
 })
